@@ -1020,3 +1020,45 @@ footer a:hover{
     transform:
     translateY(0);
 }
+
+/* LUXURY CURSOR */
+
+.cursor{
+    width:26px;
+    height:26px;
+
+    border:
+    1px solid rgba(200,164,107,0.8);
+
+    border-radius:50%;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    pointer-events:none;
+
+    transform:
+    translate(-50%,-50%);
+
+    z-index:9999;
+
+    transition:
+    transform 0.15s ease,
+    width 0.3s ease,
+    height 0.3s ease,
+    background 0.3s ease;
+
+    backdrop-filter:blur(2px);
+}
+
+/* HOVER EFFECT */
+
+.cursor.hover{
+    width:60px;
+    height:60px;
+
+    background:
+    rgba(200,164,107,0.08);
+}
