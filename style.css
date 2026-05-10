@@ -49,10 +49,18 @@
     transition:0.7s ease;
 
     z-index:1100;
+
+    opacity:0;
+
+    visibility:hidden;
 }
 
 .mobile-menu.active{
     transform:translateY(0);
+
+    opacity:1;
+
+    visibility:visible;
 }
 
 .mobile-menu a{
@@ -68,6 +76,16 @@
     letter-spacing:2px;
 
     transition:0.4s ease;
+
+    opacity:0;
+
+    transform:translateY(30px);
+}
+
+.mobile-menu.active a{
+    opacity:1;
+
+    transform:translateY(0);
 }
 
 .mobile-menu a:hover{
