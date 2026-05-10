@@ -914,5 +914,21 @@ footer a:hover{
 
     gap:18px;
     }
+
+    .testimonials{
+    padding:120px 7%;
+    }
+
+    .testimonial-header h2{
+    font-size:3rem;
+    }
+
+    .testimonial-card{
+    padding:45px 30px;
+    }
+
+    .quote{
+    font-size:1.6rem;
+    }
     
     }
