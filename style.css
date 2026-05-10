@@ -697,6 +697,96 @@ footer a:hover{
     transform:scale(1.08);
 }
 
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:170px 8%;
+
+    background:#0D0D0D;
+}
+
+.testimonial-header{
+    margin-bottom:80px;
+
+    max-width:800px;
+}
+
+.testimonial-header p{
+    color:#C8A46B;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.testimonial-header h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+.testimonial-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+}
+
+.testimonial-card{
+    padding:60px 50px;
+
+    border:
+    1px solid rgba(255,255,255,0.05);
+
+    background:
+    rgba(255,255,255,0.015);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.5s ease;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+
+    border:
+    1px solid rgba(200,164,107,0.2);
+}
+
+.quote{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+    font-weight:300;
+
+    line-height:1.5;
+
+    margin-bottom:40px;
+
+    color:#EDE6DA;
+}
+
+.testimonial-card h3{
+    font-size:1rem;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+}
+
+.testimonial-card span{
+    color:#888;
+
+    font-size:0.9rem;
+}
+
 /* PARALLAX SECTION */
 
 .parallax{
