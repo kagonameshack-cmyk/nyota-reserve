@@ -96,12 +96,16 @@ body{
 /* NAVBAR */
 
 nav{
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
+    width:92%;
 
-    padding:28px 8%;
+    position:fixed;
+
+    top:22px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:22px 42px;
 
     display:flex;
     justify-content:space-between;
@@ -110,13 +114,25 @@ nav{
     z-index:1000;
 
     transition:0.5s ease;
+
+    border:
+    1px solid transparent;
+
+    border-radius:100px;
 }
 
 nav.scrolled{
-    background:rgba(0,0,0,0.55);
+    background:
+    rgba(10,10,10,0.58);
 
-    backdrop-filter:blur(18px);
-}
+    backdrop-filter:blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.25);
+    }
 
 .logo{
     font-family:'Cormorant Garamond',serif;
@@ -997,6 +1013,14 @@ footer a:hover{
 
     .final-content h2{
     font-size:3.2rem;
+    }
+
+    nav{
+    width:90%;
+
+    padding:18px 24px;
+
+    top:16px;
     }
     
     }
