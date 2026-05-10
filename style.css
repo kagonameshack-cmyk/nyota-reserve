@@ -428,6 +428,10 @@ footer a:hover{
 
 @media(max-width:900px){
 
+    .menu-toggle{
+    display:flex;
+    }
+    
     .nav-links{
         display:none;
     }
