@@ -493,8 +493,68 @@ footer a:hover{
         font-size:3rem;
     }
 
+    .stats{
+    padding:100px 7%;
+    }
+    
   }
 
+/* STATS SECTION */
+
+.stats{
+    padding:120px 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:40px;
+
+    background:#111111;
+}
+
+.stat-box{
+    text-align:center;
+
+    padding:50px 30px;
+
+    border:
+    1px solid rgba(255,255,255,0.05);
+
+    background:
+    rgba(255,255,255,0.015);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.5s ease;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+
+    border:
+    1px solid rgba(200,164,107,0.2);
+}
+
+.stat-box h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    color:#C8A46B;
+
+    margin-bottom:18px;
+}
+
+.stat-box p{
+    color:#AFAFAF;
+
+    letter-spacing:1px;
+
+    line-height:1.8;
+}
 
 /* PARALLAX SECTION */
 
