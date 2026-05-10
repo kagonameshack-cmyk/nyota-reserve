@@ -492,10 +492,6 @@ footer a:hover{
     .reservation h2{
         font-size:3rem;
     }
-
-    .stats{
-    padding:100px 7%;
-    }
     
   }
 
@@ -644,4 +640,8 @@ footer a:hover{
         font-size:2.8rem;
     }
 
+    .stats{
+    padding:100px 7%;
+    }
+    
     }
