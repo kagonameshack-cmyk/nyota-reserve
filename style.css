@@ -215,6 +215,8 @@ nav.scrolled{
     display:flex;
     align-items:center;
     justify-content:center;
+
+    image-rendering:auto;
 }
 
 .overlay{
@@ -372,6 +374,12 @@ nav.scrolled{
     filter:
     brightness(0.9)
     contrast(1.05);
+
+    image-rendering:auto;
+
+    filter:
+    contrast(1.03)
+    saturate(1.02);
 }
 
 .card:hover img{
@@ -455,6 +463,8 @@ nav.scrolled{
     justify-content:center;
 
     overflow:hidden;
+
+    image-rendering:auto;
 }
 
 .final-overlay{
@@ -806,6 +816,12 @@ footer a:hover{
     object-fit:cover;
 
     transition:1.4s ease;
+
+    image-rendering:auto;
+
+    filter:
+    contrast(1.03)
+    saturate(1.02);
 }
 
 .gallery-item:hover img{
