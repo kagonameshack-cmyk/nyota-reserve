@@ -552,6 +552,71 @@ footer a:hover{
     line-height:1.8;
 }
 
+/* GALLERY SECTION */
+
+.gallery-section{
+    padding:160px 8%;
+
+    background:#0D0D0D;
+}
+
+.gallery-header{
+    margin-bottom:70px;
+
+    max-width:800px;
+}
+
+.gallery-header p{
+    color:#C8A46B;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.gallery-header h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+.gallery-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:28px;
+}
+
+.gallery-item{
+    overflow:hidden;
+
+    position:relative;
+
+    height:500px;
+
+    background:#111;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1.4s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
 /* PARALLAX SECTION */
 
 .parallax{
