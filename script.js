@@ -57,3 +57,37 @@ function revealSections(){
 }
 
 revealSections();
+
+
+const cursor =
+document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+
+});
+
+/* HOVER EFFECT */
+
+const hoverElements =
+document.querySelectorAll(
+"a, .card, .gallery-item, .testimonial-card, .stat-box"
+);
+
+hoverElements.forEach(el => {
+
+    el.addEventListener("mouseenter", () => {
+
+        cursor.classList.add("hover");
+
+    });
+
+    el.addEventListener("mouseleave", () => {
+
+        cursor.classList.remove("hover");
+
+    });
+
+});
