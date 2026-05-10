@@ -552,6 +552,86 @@ footer a:hover{
     line-height:1.8;
 }
 
+/* SIGNATURE EXPERIENCES */
+
+.signature{
+    padding:170px 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:90px;
+
+    background:#111111;
+}
+
+.signature-left p{
+    color:#C8A46B;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.signature-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+.signature-right{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:60px;
+}
+
+.experience-item{
+    display:flex;
+
+    gap:30px;
+
+    align-items:flex-start;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.06);
+
+    padding-bottom:40px;
+}
+
+.experience-item span{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    color:#C8A46B;
+
+    min-width:60px;
+}
+
+.experience-item h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+    font-weight:300;
+
+    margin-bottom:18px;
+}
+
+.experience-item p{
+    color:#AFAFAF;
+
+    line-height:2;
+    }
+
 /* GALLERY SECTION */
 
 .gallery-section{
