@@ -708,5 +708,17 @@ footer a:hover{
     .stats{
     padding:100px 7%;
     }
+
+    .gallery-section{
+    padding:120px 7%;
+    }
+
+    .gallery-header h2{
+    font-size:3rem;
+    }
+
+    .gallery-item{
+    height:420px;
+    }
     
     }
