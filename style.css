@@ -1,1 +1,416 @@
+/* RESET */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0D0D0D;
+    color:#EDE6DA;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+
+    padding:28px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:1000;
+
+    transition:0.5s ease;
+}
+
+nav.scrolled{
+    background:rgba(0,0,0,0.55);
+
+    backdrop-filter:blur(18px);
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+
+    color:#C8A46B;
+
+    font-size:1.6rem;
+
+    letter-spacing:5px;
+}
+
+.nav-links{
+    display:flex;
+    gap:45px;
+}
+
+.nav-links a{
+    color:#EDE6DA;
+
+    text-decoration:none;
+
+    font-size:0.85rem;
+
+    letter-spacing:2px;
+
+    transition:0.4s ease;
+}
+
+.nav-links a:hover{
+    color:#C8A46B;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:url('images/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.82)
+    );
+}
+
+.hero-content{
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    width:90%;
+    max-width:950px;
+}
+
+.hero-line{
+    width:120px;
+    height:1px;
+
+    background:#C8A46B;
+
+    margin:0 auto 35px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6.5rem;
+    font-weight:300;
+
+    line-height:0.95;
+
+    letter-spacing:2px;
+
+    margin-bottom:35px;
+}
+
+.hero p{
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:#D0D0D0;
+}
+
+.hero-btn{
+    display:inline-block;
+
+    margin-top:50px;
+
+    padding:18px 42px;
+
+    border:1px solid #C8A46B;
+
+    color:#EDE6DA;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.8rem;
+
+    transition:0.5s ease;
+}
+
+.hero-btn:hover{
+    background:#C8A46B;
+    color:#0D0D0D;
+}
+
+/* EXPERIENCE */
+
+.experience{
+    padding:160px 8% 130px;
+}
+
+.experience-text{
+    max-width:850px;
+}
+
+.small-title{
+    color:#C8A46B;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.experience h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.8rem;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:35px;
+}
+
+.experience-description{
+    color:#AFAFAF;
+
+    line-height:2;
+
+    max-width:680px;
+}
+
+/* SHOWCASE */
+
+.showcase{
+    padding:0 8% 140px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+}
+
+.card{
+    position:relative;
+
+    overflow:hidden;
+
+    height:540px;
+
+    background:#111;
+
+    cursor:pointer;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1.5s ease;
+
+    filter:
+    brightness(0.9)
+    contrast(1.05);
+}
+
+.card:hover img{
+    transform:scale(1.08);
+
+    filter:
+    brightness(1)
+    contrast(1.08);
+}
+
+.card-content{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.05)
+    );
+
+    display:flex;
+    align-items:flex-end;
+
+    padding:40px;
+}
+
+.card-content h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.3rem;
+    font-weight:300;
+
+    letter-spacing:1px;
+}
+
+/* RESERVATION */
+
+.reservation{
+    padding:170px 8%;
+
+    background:#111111;
+
+    text-align:center;
+}
+
+.reservation h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    margin-bottom:35px;
+}
+
+.reservation p{
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:#AFAFAF;
+}
+
+/* FOOTER */
+
+footer{
+    padding:40px 8%;
+
+    border-top:
+    1px solid rgba(255,255,255,0.06);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+footer p{
+    color:#777;
+
+    font-size:0.9rem;
+
+    letter-spacing:1px;
+}
+
+footer a{
+    color:#C8A46B;
+
+    text-decoration:none;
+
+    transition:0.4s ease;
+}
+
+footer a:hover{
+    opacity:0.7;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:4.5rem;
+    }
+
+    .experience h2,
+    .reservation h2{
+        font-size:3.5rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+        padding:22px 6%;
+    }
+
+    .hero h1{
+        font-size:3.3rem;
+
+        line-height:1;
+    }
+
+    .hero p{
+        font-size:0.95rem;
+
+        line-height:1.8;
+    }
+
+    .hero-btn{
+        width:100%;
+
+        max-width:320px;
+
+        text-align:center;
+    }
+
+    .experience,
+    .reservation{
+        padding:120px 7%;
+    }
+
+    .showcase{
+        padding:0 7% 120px;
+
+        gap:24px;
+    }
+
+    .card{
+        height:460px;
+    }
+
+    .experience h2,
+    .reservation h2{
+        font-size:3rem;
+    }
+
+  }
