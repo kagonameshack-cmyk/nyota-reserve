@@ -773,6 +773,16 @@ footer a:hover{
         font-size:3.5rem;
     }
 
+    .signature{
+    grid-template-columns:1fr;
+
+    gap:70px;
+    }
+
+    .signature-left h2{
+    font-size:3.5rem;
+    }
+
 }
 
 @media(max-width:600px){
@@ -799,6 +809,20 @@ footer a:hover{
 
     .gallery-item{
     height:420px;
+    }
+
+    .signature{
+    padding:120px 7%;
+    }
+
+    .signature-left h2{
+    font-size:3rem;
+    }
+
+    .experience-item{
+    flex-direction:column;
+
+    gap:18px;
     }
     
     }
