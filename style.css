@@ -1062,3 +1062,11 @@ footer a:hover{
     background:
     rgba(200,164,107,0.08);
 }
+
+@media(max-width:900px){
+
+    .cursor{
+        display:none;
+    }
+
+}
