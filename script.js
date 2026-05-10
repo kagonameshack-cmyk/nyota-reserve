@@ -27,3 +27,33 @@ menuToggle.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
 
 });
+
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", revealSections);
+
+function revealSections(){
+
+    reveals.forEach(section => {
+
+        const windowHeight =
+        window.innerHeight;
+
+        const revealTop =
+        section.getBoundingClientRect().top;
+
+        const revealPoint = 120;
+
+        if(revealTop < windowHeight - revealPoint){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+revealSections();
