@@ -22,9 +22,30 @@ document.getElementById("menuToggle");
 const mobileMenu =
 document.getElementById("mobileMenu");
 
+const mobileLinks =
+document.querySelectorAll(".mobile-link");
+
+/* OPEN MENU */
+
 menuToggle.addEventListener("click", () => {
 
     mobileMenu.classList.toggle("active");
+
+    menuToggle.classList.toggle("active");
+
+});
+
+/* CLOSE MENU WHEN LINK CLICKED */
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("active");
+
+        menuToggle.classList.remove("active");
+
+    });
 
 });
 
