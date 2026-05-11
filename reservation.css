@@ -108,6 +108,18 @@ form{
     gap:28px;
 }
 
+.input-group span{
+    display:block;
+
+    margin-bottom:14px;
+
+    color:#C8A46B;
+
+    letter-spacing:2px;
+
+    font-size:0.75rem;
+}
+
 .input-group input,
 .input-group textarea{
     width:100%;
